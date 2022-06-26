@@ -75,22 +75,15 @@ while (!done)
     player.Charisma = chaRoll;
 
     Console.WriteLine();
-    Console.WriteLine($"Rad! here are your stats {player.Name}. I want you to know though, just like" +
-        $" class or race these dont define you. You are special because you are you. You live therefore you are beautiful. ya feel?");
     Console.WriteLine($"Strength = {player.Strength}");
     Console.WriteLine($"Dexterity = {player.Dexterity}");
     Console.WriteLine($"Constitutuion = {player.Constitution}");
     Console.WriteLine($"Wisdom = {player.Wisdom}");
     Console.WriteLine($"Intelligence = {player.Intelligence}");
     Console.WriteLine($"Charisma = {player.Charisma}");
-
-
-    int punchRoll = d20.RollDice(1);
-    Console.WriteLine(punchRoll);
-    int strengthMod = player.GetAbilityModifier(player.Strength);
-    Console.WriteLine(player.Strength);
-    Console.WriteLine(strengthMod);
-    Console.WriteLine(punchRoll + strengthMod);
+    Console.WriteLine();
+    Console.WriteLine($"Rad! here are your stats {player.Name}. I want you to know though, just like" +
+        $" class or race these dont define you. You are special because you are you. You live therefore you are beautiful. ya feel?");
 
 
 
