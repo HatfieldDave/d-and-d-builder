@@ -4,10 +4,19 @@ namespace d_and_d_builder
     public class PlayerCharacter : Character
     {
         public int Level { get; set; } = 1;
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public Race Race { get; set; }
         public Class Class { get; set; }
 
+        public int GetAbilityModifier(int ability)
+        {
+           int abilityMod = (ability - 10) / 2;
+            if (abilityMod <= -5)
+            {
+                return -5;
+            }
+            return abilityMod;
+        }
 
         public List<Race> GetListOfRaceEnums()
         {
