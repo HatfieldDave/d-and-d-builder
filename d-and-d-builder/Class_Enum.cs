@@ -1,11 +1,9 @@
 ﻿using System;
 namespace d_and_d_builder
 {
-    public class Class_Enum
+    public enum Class
     {
-        public Class_Enum()
-        {
-        }
+        Barbarian
     }
 }
 
