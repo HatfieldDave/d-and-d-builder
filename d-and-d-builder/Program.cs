@@ -35,6 +35,8 @@ while (!done)
             races.IndexOf(0);
             break;
     }
+
+   
    
 
     // Class Selecton
