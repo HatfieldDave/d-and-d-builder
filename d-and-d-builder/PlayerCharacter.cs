@@ -1,6 +1,8 @@
 ﻿using System;
+
+
 namespace d_and_d_builder
-{
+    {
     public class PlayerCharacter : Character
     {
         public int Level { get; set; } = 1;
@@ -31,9 +33,10 @@ namespace d_and_d_builder
             return races;
         }
 
-        public List<Class> GetListOfClassEnums()
+        public List<Class> GetPlayerClass()
         {
             List<Class> classes = Enum.GetValues(typeof(Class)).Cast<Class>().ToList();
+
             int count = 0;
             foreach (Class @class in classes)
             {

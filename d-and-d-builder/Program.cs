@@ -5,6 +5,7 @@ PlayerCharacter player = new PlayerCharacter();
 Dice d6 = new Dice(6);
 Dice d20 = new Dice(20);
 
+
 bool done = false;
 while (!done)
 {
@@ -46,7 +47,7 @@ while (!done)
         $" celebrate others and their culture so I celebrate you {player.Name}");
     Console.WriteLine("Alrirght onto the next thing. What class are you? Not like socio-economic class," +
         $" more like what you do. What do you do {player.Name}");
-    List<Class> classes = player.GetListOfClassEnums();
+    List<Class> classes = player.GetPlayerClass();
 
     Console.Write("coose one: ");
 
